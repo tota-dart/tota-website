@@ -1,0 +1,133 @@
+:root {
+  --font-family-sans: 'IBM Plex Sans';
+  --font-family-sans-condensed: 'IBM Plex Sans';
+  --font-family-mono: 'IBM Plex Mono';
+
+  --font-size: 20px;
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.5rem;
+
+  --color-blue: #0909FF;
+  --color-white: #F8F7FE;
+  --color-blue-2: #5C5DFE;
+  --color-blue-3: #9F9FFD;
+  --color-blue-4: #C1BEFF;
+  --color-yellow: #FAFB0B;
+
+  --sidebar-width: 12rem;
+}
+
+html {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+  font-family: var(--font-family-sans);
+  font-weight: 400;
+  font-size: var(--font-size);
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+body {
+  background-color: var(--color-blue-4);
+  color: var(--color-blue);
+  margin: 0;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-sans-condensed);
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.4px;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  margin: 0.5em 0;
+}
+h2 {
+  font-size: var(--font-size-h2);
+  margin: 0.5em 0;
+}
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+a {
+  background-color: var(--color-blue);
+  color: var(--color-yellow);
+  padding: 0 3px;
+}
+
+pre,
+code {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  font-family: var(--font-family-mono);
+  font-weight: 500;
+}
+
+pre {
+  padding: 1em;
+  overflow-x: scroll;
+  border: 2px solid var(--color-blue);
+}
+
+/* Tables */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+td,
+th {
+	padding: 0;
+	border: 1px solid var(--color-blue-4);
+	border-width: 0 0 1px;
+	padding: .5em .75em;
+	vertical-align: top;
+}
+thead td,
+thead th {
+	border-width: 0 0 2px;
+  text-align: left;
+}
+
+/* Layout */
+.columns {
+  display: flex;
+}
+.full-height {
+  min-height: 100vh;
+}
+
+/* Docs */
+.docs aside {
+  width: var(--sidebar-width);
+  padding: 0 1em;
+}
+
+.docs main {
+  flex: 1;
+  background-color: var(--color-white);
+  padding: 2.5em 5em;
+}
+
+.docs pre {
+  max-width: calc(100vw - var(--sidebar-width) - 11em);
+}
