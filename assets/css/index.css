@@ -166,7 +166,7 @@ article {
 #footer {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: 2fr 1fr 1fr;
   grid-gap: 3em;
   justify-content: space-evenly;
   padding: 5em 3em;
@@ -185,10 +185,43 @@ article {
   margin: 0;
 }
 
+/* Article grid */
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 10px 740px 10px 1fr 1fr;
+}
+
+article > * {
+  grid-column: 4;
+}
+
+article > figure {
+  grid-column: 1 / -1;
+  margin: 20px 0;
+}
+
+article > .aside {
+  grid-column: 5 / -1;
+}
+
+article > blockquote {
+  grid-column: 3 / span 2;
+  margin: 0px 0;
+  color: #666;
+  border-left: 3px solid black;
+  padding-left: 10px;
+}
+
+/* Posts */
+.posts article {
+  background-color: var(--color-white);
+}
+
 /* Responsive */
 @media (max-width: 700px) {
   #footer {
     grid-template-columns: 1fr;
+    padding: 3em 1.5em;
   }
 
   .docs main {
