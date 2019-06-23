@@ -54,6 +54,7 @@ h1,
 h2,
 h3 {
   letter-spacing: -0.4px;
+  line-height: 1.3em;
 }
 
 h1 {
@@ -203,11 +204,18 @@ article > blockquote {
 #footer p {
   margin: 0;
 }
+#footer .logo {
+  height: 50px;
+  margin-bottom: 1em;
+}
 
 /* Posts */
 .posts article {
   padding: 5em;
   background-color: var(--color-white);
+}
+.posts img {
+  max-width: 100%;
 }
 
 /* Responsive */
