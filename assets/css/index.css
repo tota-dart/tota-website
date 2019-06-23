@@ -19,8 +19,8 @@
 }
 
 html {
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   font-family: var(--font-family-sans);
   font-weight: 400;
   font-size: var(--font-size);
@@ -32,7 +32,6 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
 
 body {
   background-color: var(--color-blue-4);
@@ -54,7 +53,7 @@ h6 {
 h1,
 h2,
 h3 {
-	letter-spacing: -0.4px;
+  letter-spacing: -0.4px;
 }
 
 h1 {
@@ -110,7 +109,7 @@ thead th {
   text-align: left;
 }
 
-/* Layout */
+/* Sidebar Layout */
 .sidebar-layout {
   display: flex;
   flex-wrap: wrap;
@@ -124,17 +123,6 @@ thead th {
   flex-basis: 0;
   flex-grow: 999;
   min-width: 50%;
-}
-
-
-/* Docs */
-.docs main {
-  background-color: var(--color-white);
-  padding: 2.5em 5em;
-}
-
-.docs pre {
-  max-width: calc(100vw - var(--sidebar-width) - 11em);
 }
 
 /* Sidebar */
@@ -155,34 +143,6 @@ thead th {
 .sidebar nav a {
   background-color: transparent;
   color: inherit;
-}
-
-/* Posts */
-article {
-  padding: 5em;
-}
-
-/* Footer */
-#footer {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-gap: 3em;
-  justify-content: space-evenly;
-  padding: 5em 3em;
-  background-color: var(--color-blue);
-  color: white;
-}
-#footer nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-#footer h4 {
-  margin-top: 0;
-}
-#footer p {
-  margin: 0;
 }
 
 /* Article grid */
@@ -212,8 +172,41 @@ article > blockquote {
   padding-left: 10px;
 }
 
+/* Docs */
+.docs main {
+  background-color: var(--color-white);
+  padding: 2.5em 5em;
+}
+.docs pre {
+  max-width: calc(100vw - var(--sidebar-width) - 11em);
+}
+
+/* Footer */
+#footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-gap: 3em;
+  justify-content: space-evenly;
+  padding: 5em 3em;
+  background-color: var(--color-blue);
+  color: white;
+}
+#footer nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#footer h4 {
+  margin-top: 0;
+}
+#footer p {
+  margin: 0;
+}
+
 /* Posts */
 .posts article {
+  padding: 5em;
   background-color: var(--color-white);
 }
 
