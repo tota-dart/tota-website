@@ -6,15 +6,17 @@ template: "docs.mustache"
 
 # Commands
 
+Tota is a command-line (CLI) tool available in your terminal. You can invoke its
+commands with `tota [command]`.
+
+<br>
+
 ## init
 
-Creates a new Tota project from the starting [template](https://github.com/tota-dart/tota-starter).
+Scaffolds a new Tota project in the current directory from the starting
+[template](https://github.com/tota-dart/tota-starter).
 
 ```bash
-# Create a site directory
-mkdir site && cd site
-
-# Initialize project
 tota init
 ```
 

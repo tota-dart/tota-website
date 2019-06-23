@@ -14,6 +14,8 @@ project directory.
 
 ## Site
 
+The HTML tags in `<head>` will be populated from this config.
+
 Name | Description
 --- | ---
 `TOTA_TITLE` | The title of the website.
@@ -25,6 +27,10 @@ Name | Description
 <br>
 
 ## Directory
+
+You are permitted to choose your own directory names in your Tota project,
+as long as you update the following settings.
+
 Name | Description
 --- | ---
 `TOTA_PUBLIC_DIR` | Contains all generated and publicly-accessible files.
