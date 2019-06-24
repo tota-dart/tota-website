@@ -11,10 +11,10 @@
   --color-blue: #0909FF;
   --color-white: #F8F7FE;
   --color-blue-2: #5C5DFE;
-  --color-blue-3: #9F9FFD;
   --color-blue-4: #D4D4FF;
   --color-yellow: #FAFB0B;
 
+  --navbar-height: 80px;
   --sidebar-width: 12rem;
 }
 
@@ -69,12 +69,72 @@ h3 {
   font-size: var(--font-size-h3);
 }
 
-a {
+a:not(.button) {
   background-color: var(--color-blue);
   color: var(--color-yellow);
   padding: 0 3px;
 }
 
+pre,
+code {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  font-family: var(--font-family-mono);
+  font-weight: 500;
+  white-space: inherit;
+}
+
+pre {
+  white-space: pre-line;
+  overflow: auto;
+  padding: 1em;
+  border: 2px solid var(--color-blue);
+}
+
+/* Tables */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+td,
+th {
+	padding: 0;
+	border: 1px solid var(--color-blue-4);
+	border-width: 0 0 1px;
+	padding: .5em .75em;
+	vertical-align: top;
+}
+thead td,
+thead th {
+	border-width: 0 0 2px;
+  text-align: left;
+}
+
+/* Buttons */
+.button {
+  position: relative;
+  left: 8px;
+  display: inline-block;
+  background-color: var(--color-blue);
+  color: var(--color-yellow);
+  padding: 0.5em 1em;
+}
+.button::after {
+  position: absolute;
+  top: 8px;
+  left: -8px;
+  width: 100%;
+  height: 100%;
+  content: '';
+  border: 2px solid var(--color-blue);
+}
+.button:hover {
+  transform: translate(-8px, 8px);
+}
+.button:hover::after {
+  top: 0;
+  left: 0;
+}
 pre,
 code {
   -moz-osx-font-smoothing: auto;
@@ -110,20 +170,49 @@ thead th {
   text-align: left;
 }
 
-/* Sidebar Layout */
-.sidebar-layout {
+/* 
+}
+
+/* Navbar */
+#navbar {
+  background-color: var(--color-white);
+  height: var(--navbar-height);
+  align-items: center;
+  display: grid;
+  grid-template-columns: 5em 1fr 1fr 5em;
+  border-bottom: 2px solid var(--color-blue);
+}
+#navbar .content {
   display: flex;
-  flex-wrap: wrap;
-  min-height: 100vh;
+  align-items: center;
 }
-.sidebar {
-  flex-basis: var(--sidebar-width);
-  flex-grow: 1;
+#navbar .content:first-child {
+  grid-column: 2;
 }
-.not-sidebar {
-  flex-basis: 0;
-  flex-grow: 999;
-  min-width: 50%;
+#navbar .content:last-child {
+  justify-content: flex-end;
+}
+#navbar .logo {
+  height: 50px;
+  margin-right: 1em;
+}
+#navbar a {
+  color: inherit;
+  background-color: transparent;
+}
+
+/* Layouts */
+.sidebar-layout {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 1fr;
+}
+.features-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2px;
+}
+.features-layout .feature {
+  box-shadow: 0 0 0 2px var(--color-blue);
 }
 
 /* Sidebar */
@@ -198,6 +287,11 @@ article > blockquote {
   margin: 0;
   padding: 0;
 }
+#footer nav li {
+  display: flex;
+  align-items: center;
+  margin: 0.25em 0;
+}
 #footer h4 {
   margin-top: 0;
 }
@@ -207,6 +301,9 @@ article > blockquote {
 #footer .logo {
   height: 50px;
   margin-bottom: 1em;
+}
+#footer .icon {
+  margin-right: 0.25em;
 }
 
 /* Posts */
@@ -218,17 +315,90 @@ article > blockquote {
   max-width: 100%;
 }
 
+/* Home */
+#hero {
+  display: grid;
+  grid-template-columns: auto 740px auto;
+  padding: 3em 1em 5em;
+  background-color: var(--color-white);
+  background-image: url('/assets/img/dots.svg');
+  background-size: 30px;
+}
+#hero > * {
+  grid-column: 2;
+}
+#hero a {
+  text-decoration: none;
+}
+#hero a img {
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+
+#features {
+  background-color: var(--color-white);
+}
+#features .feature {
+  padding: 1.5em;
+}
+#features h3 {
+  margin: 0 0 0.5em;
+}
+#features p {
+  margin: 0;
+}
+
+#pub-install pre {
+  border: none;
+  text-align: center;
+}
+
 /* Responsive */
-@media (max-width: 700px) {
+@media (max-width: 740px) {
+  :root {
+    --font-size-h1: 2rem;
+    --font-size-h2: 1.5rem;
+    --font-size-h3: 1.2rem;
+    --sidebar-width: 10em;
+  }
+  .features-layout {
+    grid-template-columns: 1fr;
+  }
+
+  #hero {
+    grid-template-columns: 1fr;
+  }
+
   #footer {
     grid-template-columns: 1fr;
     padding: 3em 1.5em;
+  }
+
+  .sidebar {
+    padding: 2em 1em 0;
   }
 
   .docs main {
     padding: 1.5em;
   }
   .docs pre {
-    max-width: 100vw;
+    max-width: 100%;
   }
 }
+
+@media (max-width: 600px) {
+  :root {
+    --sidebar-width: 100%;
+  }
+  .sidebar-layout {
+    grid-template-columns: 1fr;
+  }
+  .sidebar,
+  .docs main {
+    padding: 1em;
+  }
+  .docs pre {
+    width: 100%;
+  }
+}
+

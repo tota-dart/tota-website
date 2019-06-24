@@ -42,6 +42,18 @@ Name | Description
 <br>
 <br>
 
+## Deploy
+
+These settings are used to manage deployments.
+
+Name | Description
+--- | ---
+`TOTA_NETLIFY_SITE` | The name of the site on Netlify.
+`TOTA_NETLIFY_TOKEN` | Netlify personal access token.
+
+<br>
+<br>
+
 ## Default `.env` file
 
 Tota ships with the following dotenv file as default. If you ever misplace it,
@@ -74,4 +86,10 @@ TOTA_TEMPLATES_DIR="templates"
 
 # Contains non-page static files (JavaScript, CSS, etc.)
 TOTA_ASSETS_DIR="assets"
+
+# The name of the site on Netlify.
+TOTA_NETLIFY_SITE=""
+
+# Netlify personal access token.
+TOTA_NETLIFY_TOKEN=""
 ```
