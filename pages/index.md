@@ -6,7 +6,7 @@ public: true
 
 <section id="hero">
   <h1>Tota is a simple and elegant static-site generator, written in Dart.</h1>
-  <div class="cta">
+  <div>
     <a class="button" href="/docs">
       <img src="/assets/img/book-open.svg" alt="Open book"/>
       <span>Read the docs</span>

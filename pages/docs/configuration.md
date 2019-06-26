@@ -10,6 +10,9 @@ Tota uses environment variables prefixed with `TOTA_*` for all settings.
 You can modify these settings with a `.env` (dotenv) file placed in the
 project directory.
 
+It's recommended that you do not check-in your `.env` file into your git
+repository.
+
 <br>
 
 ## Site
