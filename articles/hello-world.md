@@ -1,6 +1,6 @@
 ---
 title: Hello, world!
-date: "2019-06-10"
+date: "2019-06-01"
 template: "posts.mustache"
 public: true
 ---

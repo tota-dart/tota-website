@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{> head }}
+  </head>
+  <body>
+    <main>
+      <ul>
+      {{#posts}}
+        <li>
+          <a href="{{{url}}}">
+            <h3>{{title}}</h3>
+          </a>
+        </li>
+      {{/posts}}
+      </ul>
+    </main>
+    {{> footer }}
+  </body>
+</html>
