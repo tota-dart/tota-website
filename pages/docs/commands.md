@@ -56,3 +56,19 @@ tota build
 Option | Description
 --- | ---
 `-v`, `--verbose` | Enable verbose logging
+
+<br>
+<br>
+
+## Deploy
+
+Deploys site to a host provider.
+
+```bash
+tota deploy
+```
+
+Option | Description
+--- | ---
+`-p`, `--provider` | Host provider (defaults to "netlify")
+`-v`, `--verbose` | Enable verbose logging
