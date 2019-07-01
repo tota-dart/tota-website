@@ -46,6 +46,18 @@ Name | Description
 <br>
 <br>
 
+## Posts
+
+These settings relate only to posts.
+
+Name | Description | Default
+--- | --- | ---
+`TOTA_DATE_FORMAT` | The date format | `YYYY-MM-DD`
+`TOTA_PERMALINK` | The posts [permalink](/docs/permalinks) format
+
+<br>
+<br>
+
 ## Deploy
 
 These settings are used to manage deployments.
@@ -74,7 +86,7 @@ TOTA_TITLE="Tota"
 TOTA_DESCRIPTION="Tota is a simple, elegant framework for generating static sites."
 
 # The default post author.
-TOTA_AUTHOR="izolate"
+TOTA_AUTHOR="Awesome Person"
 
 # The language of the website in ISO 639-1 format. Default is `en`.
 TOTA_LANGUAGE="en"
@@ -93,6 +105,12 @@ TOTA_TEMPLATES_DIR="templates"
 
 # Contains non-page static files (JavaScript, CSS, etc.)
 TOTA_ASSETS_DIR="assets"
+
+# The date format.
+TOTA_DATE_FORMAT="YYYY-MM-DD"
+
+# The posts permalink format.
+TOTA_PERMALINK=""
 
 # The name of the site on Netlify.
 TOTA_NETLIFY_SITE=""
