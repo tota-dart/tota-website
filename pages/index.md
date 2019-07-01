@@ -17,15 +17,15 @@ public: true
 <section id="features" class="features-layout">
   <div class="feature">
     <h3>Simple, but not stupid.</h3>
-    <p>Tota forgoes much of the complexity of other static-site generators in order to remain joyous and memorable to use.</p>
+    <p>Tota forgoes some complexity of other static-site generators in order to remain joyous and memorable to use.</p>
   </div>
   <div class="feature">
     <h3>Blog-aware.</h3>
-    <p>Tota treats this common use case with respect. Archive and tag pages, are created automatically on every build.</p>
+    <p>Tota treats this common use case with respect with optional permalinks, and archive and tag pages.</p>
   </div>
   <div class="feature">
     <h3>1-click deployments.</h3>
-    <p>One command is all it takes to deploy your site to Netlify, the leading static-site host provider.</p>
+    <p>Deploy your site to Netlify, a leading host provider, with one command. More host providers coming soon.</p>
   </div>
 </section>
 
