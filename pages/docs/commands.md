@@ -62,7 +62,8 @@ Option | Description
 
 ## Deploy
 
-Deploys site to a host provider.
+Deploys site to a hosting provider. Currently only deploys to
+[Netlify](https://www.netlify.com).
 
 ```bash
 tota deploy
@@ -70,5 +71,5 @@ tota deploy
 
 Option | Description
 --- | ---
-`-p`, `--provider` | Host provider (defaults to "netlify")
+`-p`, `--provider` | Hosting provider (defaults to "netlify")
 `-v`, `--verbose` | Enable verbose logging

@@ -25,7 +25,7 @@ public: true
   </div>
   <div class="feature">
     <h3>1-click deployments.</h3>
-    <p>Deploy your site to Netlify, a leading host provider, with one command. More host providers coming soon.</p>
+    <p>Deploy your site to Netlify, a leading hosting provider, with one command. More hosts coming soon.</p>
   </div>
 </section>
 

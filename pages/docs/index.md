@@ -28,7 +28,7 @@ Of course, if you don't already have Dart installed, you must
 ## Directory structure
 
 Running `tota init` inside an empty directory will create the following
-directory structure.
+approximate directory structure.
 
 ```bash
 .
