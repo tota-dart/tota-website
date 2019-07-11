@@ -71,5 +71,5 @@ tota deploy
 
 Option | Description
 --- | ---
-`-p`, `--provider` | Hosting provider (defaults to "netlify")
+`--host` | Hosting provider (defaults to "netlify")
 `-v`, `--verbose` | Enable verbose logging
