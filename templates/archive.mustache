@@ -4,17 +4,40 @@
     {{> head }}
   </head>
   <body>
-    <main>
-      <ul>
+    <main class="archives">
+      <header>
+        <h1>Archives</h1>
+      </header>
+      <ul class="posts">
       {{#posts}}
-        <li>
-          <a href="{{{url}}}">
+        <li class="post">
+          <a href="{{{path}}}">
             <h3>{{title}}</h3>
           </a>
+          <ul class="tags">
+            {{#tags}}
+              <li class="tag">
+                <a href="/tags/{{.}}">#{{.}}</a>
+              </li>
+            {{/tags}}
+          </ul> 
         </li>
       {{/posts}}
       </ul>
     </main>
     {{> footer }}
+
+    <script>
+      function customTitle() {
+        // Replace title in tag pages.
+        const title = '{{title}}';
+        const h1 = document.querySelector('h1');
+        if (title !== 'Tota') {
+          h1.textContent = `Articles tagged: ${title}`;
+        }
+      }
+
+      window.addEventListener('load', customTitle);
+    </script>
   </body>
 </html>

@@ -4,6 +4,8 @@ description: 'Markdown is great'
 template: "posts.mustache"
 public: true
 date: "2019-06-02"
+tags:
+  - "fun"
 ---
 
 # Markdown

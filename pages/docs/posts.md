@@ -19,4 +19,4 @@ TOTA_POSTS_DIRECTORY="articles"
 Tota re-uses the source `posts` directory name, so you can configure the end
 directory by conf
 
-
+The default template for blog is 'templates/$NAME.mustache', where $NAME equals the name of the posts directory in configuration settings.

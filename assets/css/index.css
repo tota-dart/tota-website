@@ -1,3 +1,40 @@
+/**
+ * Table of Contents.
+ *
+ * SETTINGS
+ * Global...............Globally-available variables and config.
+ *
+ * GENERIC
+ * Defaults.............A level playing field.
+ *
+ * BASE
+ * Headings.............H1–H6 styles.
+ * Links................Anchor styles.
+ * Code.................Code block styles.
+ * Tables...............Table styles.
+ *
+ * OBJECTS
+ * Grid Layouts.........Types of layouts.
+ *
+ * COMPONENTS
+ * Buttons..............Button elements.
+ * Navbar...............The main navigation bar.
+ * Footer...............The main site footer.
+ * Sidebar..............The docs footer.
+ * Article..............Post articles
+ * Hero.................Hero element on homepage.
+ * Features.............Features elements on homepage.
+ *
+ * PAGES
+ * Archives.............Archive page.
+ * Home.................Home page.
+ * Docs.................Documentation pages.
+ * Posts................Article pages.
+ */
+
+/*------------------------------------*\
+  Global
+\*------------------------------------*/
 :root {
   --font-family-sans: 'IBM Plex Sans';
   --font-family-sans-condensed: 'IBM Plex Sans';
@@ -7,6 +44,9 @@
   --font-size-h1: 2.5rem;
   --font-size-h2: 2rem;
   --font-size-h3: 1.5rem;
+
+  --font-weight: 400;
+  --font-weight-bold: 700;
 
   --color-blue: #0909FF;
   --color-white: #F8F7FE;
@@ -18,11 +58,33 @@
   --sidebar-width: 12rem;
 }
 
+@media (max-width: 740px) {
+  :root {
+    --font-size-h1: 2rem;
+    --font-size-h2: 1.5rem;
+    --font-size-h3: 1.2rem;
+    --sidebar-width: 10em;
+  }
+} 
+
+@media (max-width: 600px) {
+  :root {
+    --sidebar-width: 100%;
+  }
+}
+ 
+
+
+
+
+/*------------------------------------*\
+  Defaults
+\*------------------------------------*/
 html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: var(--font-family-sans);
-  font-weight: 400;
+  font-weight: var(--font-weight);
   font-size: var(--font-size);
   box-sizing: border-box;
 }
@@ -40,6 +102,13 @@ body {
   line-height: 1.5;
 }
 
+
+
+
+
+/*------------------------------------*\
+  Headings
+\*------------------------------------*/
 h1,
 h2,
 h3,
@@ -47,7 +116,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-family-sans-condensed);
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
 }
 
 h1,
@@ -69,12 +138,27 @@ h3 {
   font-size: var(--font-size-h3);
 }
 
+
+
+
+
+
+/*------------------------------------*\
+  Links
+\*------------------------------------*/
 a:not(.button) {
   background-color: var(--color-blue);
   color: var(--color-yellow);
   padding: 0 3px;
 }
 
+
+
+
+
+/*------------------------------------*\
+  Code
+\*------------------------------------*/
 pre,
 code {
   -moz-osx-font-smoothing: auto;
@@ -91,7 +175,13 @@ pre {
   border: 2px solid var(--color-blue);
 }
 
-/* Tables */
+
+
+
+
+/*------------------------------------*\
+  Tables
+\*------------------------------------*/
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -110,7 +200,45 @@ thead th {
   text-align: left;
 }
 
-/* Buttons */
+
+
+
+/*------------------------------------*\
+  Grid Layouts
+\*------------------------------------*/
+.sidebar-layout {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 1fr;
+}
+
+.features-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2px;
+}
+.features-layout .feature {
+  box-shadow: 0 0 0 2px var(--color-blue);
+}
+
+@media (max-width: 740px) {
+ .features-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+/*------------------------------------*\
+  Buttons
+\*------------------------------------*/
 .button {
   position: relative;
   left: 8px;
@@ -135,45 +263,14 @@ thead th {
   top: 0;
   left: 0;
 }
-pre,
-code {
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: auto;
-  font-family: var(--font-family-mono);
-  font-weight: 500;
-  white-space: inherit;
-}
 
-pre {
-  white-space: pre;
-  overflow: auto;
-  padding: 1em;
-  border: 2px solid var(--color-blue);
-}
 
-/* Tables */
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-td,
-th {
-	padding: 0;
-	border: 1px solid var(--color-blue-4);
-	border-width: 0 0 1px;
-	padding: .5em .75em;
-	vertical-align: top;
-}
-thead td,
-thead th {
-	border-width: 0 0 2px;
-  text-align: left;
-}
 
-/* 
-}
 
-/* Navbar */
+
+/*------------------------------------*\
+  Navbar
+\*------------------------------------*/
 #navbar {
   background-color: var(--color-white);
   height: var(--navbar-height);
@@ -201,77 +298,13 @@ thead th {
   background-color: transparent;
 }
 
-/* Layouts */
-.sidebar-layout {
-  display: grid;
-  grid-template-columns: var(--sidebar-width) 1fr;
-}
-.features-layout {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2px;
-}
-.features-layout .feature {
-  box-shadow: 0 0 0 2px var(--color-blue);
-}
 
-/* Sidebar */
-.sidebar {
-  padding: 3em 2em 0;
-  color: var(--color-blue-2);
-}
-.sidebar h4 {
-  margin-bottom: 0;
-}
-.sidebar nav {
-  margin-bottom: 3em;
-}
-.sidebar nav ul {
-  list-style: none;
-  padding: 0;
-}
-.sidebar nav a {
-  background-color: transparent;
-  color: inherit;
-}
 
-/* Article grid */
-article {
-  display: grid;
-  grid-template-columns: 1fr 1fr 10px 740px 10px 1fr 1fr;
-}
 
-article > * {
-  grid-column: 4;
-}
 
-article > figure {
-  grid-column: 1 / -1;
-  margin: 20px 0;
-}
-
-article > .aside {
-  grid-column: 5 / -1;
-}
-
-article > blockquote {
-  grid-column: 3 / span 2;
-  margin: 0px 0;
-  color: #666;
-  border-left: 3px solid black;
-  padding-left: 10px;
-}
-
-/* Docs */
-.docs main {
-  background-color: var(--color-white);
-  padding: 2.5em 5em;
-}
-.docs pre {
-  max-width: calc(100vw - var(--sidebar-width) - 11em);
-}
-
-/* Footer */
+/*------------------------------------*\
+  Footer
+\*------------------------------------*/
 #footer {
   width: 100%;
   display: grid;
@@ -306,16 +339,97 @@ article > blockquote {
   margin-right: 0.25em;
 }
 
-/* Posts */
-.posts article {
-  padding: 5em;
-  background-color: var(--color-white);
-}
-.posts img {
-  max-width: 100%;
+@media (max-width: 740px) {
+  #footer {
+    grid-template-columns: 1fr;
+    padding: 3em 1.5em;
+  }
 }
 
-/* Home */
+
+
+
+
+/*------------------------------------*\
+  Sidebar
+\*------------------------------------*/
+.sidebar {
+  padding: 3em 2em 0;
+  color: var(--color-blue-2);
+}
+.sidebar h4 {
+  margin-bottom: 0;
+}
+.sidebar nav {
+  margin-bottom: 3em;
+}
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar nav a {
+  background-color: transparent;
+  color: inherit;
+}
+
+@media (max-width: 740px) {
+  .sidebar {
+    padding: 2em 1em 0;
+  }
+}
+
+@media (max-width: 600px) {
+ .sidebar {
+    padding: 1em;
+  }
+}
+ 
+
+
+
+
+/*------------------------------------*\
+  Articles
+\*------------------------------------*/
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 10px 740px 10px 1fr 1fr;
+}
+
+article > * {
+  grid-column: 4;
+}
+
+article > figure {
+  grid-column: 1 / -1;
+  margin: 20px 0;
+}
+
+article > .aside {
+  grid-column: 5 / -1;
+}
+
+article > blockquote {
+  grid-column: 3 / span 2;
+  margin: 0px 0;
+  color: #666;
+  border-left: 3px solid black;
+  padding-left: 10px;
+}
+
+article .breadcrumbs a {
+  color: inherit;
+  background-color: inherit;
+  font-size: 0.75em;
+}
+
+
+
+
+
+/*------------------------------------*\
+  Hero
+\*------------------------------------*/
 #hero {
   display: grid;
   grid-template-columns: auto 740px auto;
@@ -335,6 +449,19 @@ article > blockquote {
   margin-right: 0.5em;
 }
 
+@media (max-width: 740px) {
+  #hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+/*------------------------------------*\
+  Features
+\*------------------------------------*/
 #features {
   background-color: var(--color-white);
 }
@@ -348,36 +475,82 @@ article > blockquote {
   margin: 0;
 }
 
+
+
+
+
+/*------------------------------------*\
+  Archives
+\*------------------------------------*/
+.archives {
+  display: grid;
+  grid-template-columns: 1fr 740px 1fr;
+  background-color: var(--color-white);
+  padding-top: 5em;
+}
+.archives ul {
+  list-style: none;
+  padding-left: 0;
+}
+.archives header,
+.archives .posts {
+  grid-column: 2;
+}
+.archives .posts .post {
+  margin-bottom: 3em;
+}
+.archives .posts .post > a {
+  padding: 0;
+}
+.archives .posts a {
+  color: inherit;
+  background-color: transparent;
+}
+.archives .post h3 {
+  margin: 0;
+}
+.archives .tags {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.archives .tags .tag {
+  margin-right: 0.5em;
+  font-size: 0.75em;
+}
+.archives .tags a {
+  text-decoration: none;
+}
+
+
+
+
+
+
+/*------------------------------------*\
+  Home
+\*------------------------------------*/
 #pub-install pre {
   border: none;
   text-align: center;
 }
 
-/* Responsive */
+
+
+
+
+/*------------------------------------*\
+  Docs
+\*------------------------------------*/
+.docs main {
+  background-color: var(--color-white);
+  padding: 2.5em 5em;
+}
+.docs pre {
+  max-width: calc(100vw - var(--sidebar-width) - 11em);
+}
+
 @media (max-width: 740px) {
-  :root {
-    --font-size-h1: 2rem;
-    --font-size-h2: 1.5rem;
-    --font-size-h3: 1.2rem;
-    --sidebar-width: 10em;
-  }
-  .features-layout {
-    grid-template-columns: 1fr;
-  }
-
-  #hero {
-    grid-template-columns: 1fr;
-  }
-
-  #footer {
-    grid-template-columns: 1fr;
-    padding: 3em 1.5em;
-  }
-
-  .sidebar {
-    padding: 2em 1em 0;
-  }
-
   .docs main {
     padding: 1.5em;
   }
@@ -387,18 +560,29 @@ article > blockquote {
 }
 
 @media (max-width: 600px) {
-  :root {
-    --sidebar-width: 100%;
-  }
-  .sidebar-layout {
-    grid-template-columns: 1fr;
-  }
-  .sidebar,
-  .docs main {
+ .docs main {
     padding: 1em;
   }
   .docs pre {
     width: 100%;
   }
 }
+
+
+
+
+
+/*------------------------------------*\
+  Posts
+\*------------------------------------*/
+.posts article {
+  padding: 5em;
+  background-color: var(--color-white);
+}
+.posts img {
+  max-width: 100%;
+}
+
+
+
 

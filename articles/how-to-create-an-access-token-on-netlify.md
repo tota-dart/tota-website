@@ -3,7 +3,7 @@ title: "How to create an access token on Netlify"
 date: "2019-06-23"
 template: "posts.mustache"
 public: true
-tags: ["help"]
+tags: ["help", "deploy", "netlify"]
 ---
 
 # How to create an access token on Netlify
