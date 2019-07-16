@@ -1,7 +1,7 @@
 ---
 title: "Configuration | Tota"
+template: "docs"
 public: true
-template: "docs.mustache"
 ---
 
 # Configuration

@@ -147,8 +147,7 @@ h3 {
   Links
 \*------------------------------------*/
 a:not(.button) {
-  background-color: var(--color-blue);
-  color: var(--color-yellow);
+  background-color: var(--color-yellow);
   padding: 0 3px;
 }
 
@@ -327,6 +326,10 @@ thead th {
 }
 #footer h4 {
   margin-top: 0;
+}
+#footer a {
+  background-color: transparent;
+  color: var(--color-yellow);
 }
 #footer p {
   margin: 0;
