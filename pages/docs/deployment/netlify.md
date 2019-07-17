@@ -19,7 +19,7 @@ If you have already signed up, you can skip this step. Otherwise, go to [app.net
 ## Create an access token
 
 Tota needs your authorization to deploy a site to your Netlify account. You can generate an access token
-for this purpose within the Netlify admin UI by following the steps in this help article.
+for this purpose within the Netlify admin UI by following the steps in the following help article.
 
 * [How to create an access token on Netlify](/articles/how-to-create-an-access-token-on-netlify)
 
@@ -43,7 +43,7 @@ Add your chosen site name to the config.
 TOTA_NETLIFY_SITE="tota"
 ```
 
-On deploy, Tota will automatically create a site for you, if it doesn't already exist under your account.
+On deploy, Tota will automatically create the site for you, if it doesn't already exist under your account.
 
 <br>
 

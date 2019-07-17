@@ -16,6 +16,6 @@ tota deploy
 
 ## Host on Netlify
 
-Netlify offers a CDN, automatic HTTPS, continuous deployment, a pleasant UI and CLI tool, as well as a generous free plan.
+Netlify provides a global CDN, continuous deployment, automatic HTTPS, a pleasant UI and CLI tool, and quite a generous free plan.
 
 Learn how to [deploy to Netlify](/docs/deployment/netlify).
