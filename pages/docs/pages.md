@@ -8,7 +8,17 @@ public: true
 
 The most basic type of resource, usually devoid of any dates, and suitable for home pages, landing pages, and other standalone site pages.
 
-Pages are written in Markdown and are stored in the pages directory, which is set by the `TOTA_PAGES_DIR` configuration setting. The Markdown file is converted to HTML when Tota builds your site.
+<br>
+
+## Pages directory
+
+Pages are written in Markdown (`.md`) format and stored in the pages directory. Tota will convert these files to HTML and save them in the `public` directory when your site is built.
+
+The pages directory location can be changed in the [configuration](/docs/configuration#directory) settings:
+
+```bash
+TOTA_PAGES_DIR="pages"
+```
 
 <br>
 
@@ -17,27 +27,43 @@ Pages are written in Markdown and are stored in the pages directory, which is se
 Create a new page by running the [new command](/docs/commands/#new). This will create a new Markdown file in the pages directory.
 
 ```bash
-tota new "Example page"
+tota new "Parrots and Cockatoos"
 ```
 
-Alternatively, you can manually create files in the directory.
+Alternatively, you can manually create files in the pages directory.
 
 <br>
 
 ## Filenames
 
-By default, the `new` command will convert your page title into a [slug](https://en.wikipedia.org/wiki/Clean_URL#Slug) and use that as the filename. For example, the command from above will produce the file:
+By default, the `new` command will transform your page title into a [slug](https://en.wikipedia.org/wiki/Clean_URL#Slug) and use that as the filename. For example, the command from the example above will produce the file:
 
 ```bash
-pages/example-page.md
+pages/parrots-and-cockatoos.md
 ```
 
-⚠️ The filename is reused for the generated HTML file, so if you prefer to manually create pages, ensure your filenames are URL-friendly and don't contain unsafe characters like spaces and punctuation marks.
+⚠️ Filename are important! They are re-used for the HTML files and therefore reflected in the URL.
+Make sure your filenames are URL-friendly and don't contain unsafe characters
+like spaces and punctuation marks.
 
 <br>
 
 ## Sub-directories
 
 You can group related pages into sub-directories within the pages directory. The same directory structure will be re-used in the `public` directory when Tota builds your site.
+
+This allows you to create a nested URL structure:
+
+```http
+https://www.example.com/birds/psittaciformes/parrot.html
+```
+
+<br>
+
+## See also
+
+* [Posts](/docs/posts)
+* [Front matter](/docs/front-matter)
+* [Templates](/docs/templates)
 
 <br>
