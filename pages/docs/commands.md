@@ -33,7 +33,7 @@ Option | Description
 Creates a new page from a title.
 
 ```bash
-tota new "Hello, world!"
+tota new <title>
 ```
 
 Option | Description
