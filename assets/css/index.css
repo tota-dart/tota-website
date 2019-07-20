@@ -185,6 +185,11 @@ thead th {
   display: grid;
   grid-template-columns: var(--sidebar-width) 1fr;
 }
+@media (max-width: 740px) {
+  .not-sidebar {
+    width: 100vw;
+  }
+}
 
 .features-layout {
   display: grid;
@@ -486,6 +491,9 @@ article .breadcrumbs a {
 }
 .docs pre {
   max-width: calc(100vw - var(--sidebar-width) - 11em);
+}
+.docs .table-container {
+  overflow: auto;
 }
 
 @media (max-width: 740px) {

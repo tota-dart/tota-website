@@ -11,5 +11,19 @@
       </main>
     </div>
     {{> footer }}
+    <script>
+      // Wraps all <tables> with a container <div>.
+      // Required to apply CSS offset-X rules to table parent.
+      function createTableWrapper() {
+        const tables = document.querySelectorAll('.not-sidebar table');
+        for (const table of tables) {
+          const div = document.createElement('div');
+          div.classList.add('table-container');
+          table.parentNode.insertBefore(div, table);
+          div.appendChild(table);
+        }
+      }
+      window.addEventListener('load', createTableWrapper);
+    </script>
   </body>
 </html>
