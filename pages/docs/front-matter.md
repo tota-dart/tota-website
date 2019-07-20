@@ -4,9 +4,10 @@ template: "docs"
 public: true
 ---
 
-# Front-matter
+# Front matter
 
-Front-matter is a block of YAML at the beginning of a page file, ahead of any Markdown content. The front-matter contains metadata about the page itself:
+Front matter is a block of YAML at the beginning of a page file, ahead of any Markdown content.
+The front matter contains metadata about the page itself:
 
 ```yaml
 ---
@@ -22,7 +23,7 @@ public: true
 
 ## Metadata
 
-The following table lists the pre-defined metadata that you can set in the front-matter of your page, or post.
+The following table lists the pre-defined metadata that you can set in the front matter of your page, or post.
 
 | Key           | Default                                                             | Description                                                                           |
 | ------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
