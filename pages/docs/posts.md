@@ -12,7 +12,7 @@ Posts are pages that contain additional information that allow Tota to create bl
 
 <br>
 
-# Posts directory
+# Directory
 
 Posts are written in Markdown (`.md`) format and are stored in a separate top-level posts directory. Tota will convert these files to HTML and save them in the `public` directory when your site is built.
 

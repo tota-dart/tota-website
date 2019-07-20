@@ -10,7 +10,7 @@ The most basic type of resource, usually devoid of any dates, and suitable for h
 
 <br>
 
-## Pages directory
+## Directory
 
 Pages are written in Markdown (`.md`) format and stored in the pages directory. Tota will convert these files to HTML and save them in the `public` directory when your site is built.
 

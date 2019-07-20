@@ -39,6 +39,7 @@ approximate directory structure.
 │   └── index.md
 ├── posts
 │   └── hello-world.md
+├── README.md
 └── templates
     ├── base.mustache
     └── _partials
@@ -58,7 +59,7 @@ processed into HTML and saved in the public directory.
 
 Contains content intended to become blog posts. Similar to pages, Markdown files
 will be processed into HTML and saved in the public directory, but under a
-nested `posts` directory. 
+nested `posts` directory.
 
 ### templates
 

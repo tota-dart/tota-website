@@ -36,9 +36,9 @@
   Global
 \*------------------------------------*/
 :root {
-  --font-family-sans: 'IBM Plex Sans';
-  --font-family-sans-condensed: 'IBM Plex Sans';
-  --font-family-mono: 'IBM Plex Mono';
+  --font-family-sans: "IBM Plex Sans";
+  --font-family-sans-condensed: "IBM Plex Sans";
+  --font-family-mono: "IBM Plex Mono";
 
   --font-size: 20px;
   --font-size-h1: 2.5rem;
@@ -48,11 +48,11 @@
   --font-weight: 400;
   --font-weight-bold: 700;
 
-  --color-blue: #0909FF;
-  --color-white: #F8F7FE;
-  --color-blue-2: #5C5DFE;
-  --color-blue-4: #D4D4FF;
-  --color-yellow: #FAFB0B;
+  --color-blue: #0909ff;
+  --color-white: #f8f7fe;
+  --color-blue-2: #5c5dfe;
+  --color-blue-4: #d4d4ff;
+  --color-yellow: #fafb0b;
 
   --navbar-height: 80px;
   --sidebar-width: 12rem;
@@ -65,17 +65,13 @@
     --font-size-h3: 1.2rem;
     --sidebar-width: 10em;
   }
-} 
+}
 
 @media (max-width: 600px) {
   :root {
     --sidebar-width: 100%;
   }
 }
- 
-
-
-
 
 /*------------------------------------*\
   Defaults
@@ -101,10 +97,6 @@ body {
   margin: 0;
   line-height: 1.5;
 }
-
-
-
-
 
 /*------------------------------------*\
   Headings
@@ -138,11 +130,6 @@ h3 {
   font-size: var(--font-size-h3);
 }
 
-
-
-
-
-
 /*------------------------------------*\
   Links
 \*------------------------------------*/
@@ -150,10 +137,6 @@ a:not(.button) {
   background-color: var(--color-yellow);
   padding: 0 3px;
 }
-
-
-
-
 
 /*------------------------------------*\
   Code
@@ -168,39 +151,32 @@ code {
 }
 
 pre {
-  white-space: pre-line;
+  white-space: pre;
   overflow: auto;
   padding: 1em;
   border: 2px solid var(--color-blue);
 }
 
-
-
-
-
 /*------------------------------------*\
   Tables
 \*------------------------------------*/
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 td,
 th {
-	padding: 0;
-	border: 1px solid var(--color-blue-4);
-	border-width: 0 0 1px;
-	padding: .5em .75em;
-	vertical-align: top;
+  padding: 0;
+  border: 1px solid var(--color-blue-4);
+  border-width: 0 0 1px;
+  padding: 0.5em 0.75em;
+  vertical-align: top;
 }
 thead td,
 thead th {
-	border-width: 0 0 2px;
+  border-width: 0 0 2px;
   text-align: left;
 }
-
-
-
 
 /*------------------------------------*\
   Grid Layouts
@@ -220,7 +196,7 @@ thead th {
 }
 
 @media (max-width: 740px) {
- .features-layout {
+  .features-layout {
     grid-template-columns: 1fr;
   }
 }
@@ -230,10 +206,6 @@ thead th {
     grid-template-columns: 1fr;
   }
 }
-
-
-
-
 
 /*------------------------------------*\
   Buttons
@@ -252,7 +224,7 @@ thead th {
   left: -8px;
   width: 100%;
   height: 100%;
-  content: '';
+  content: "";
   border: 2px solid var(--color-blue);
 }
 .button:hover {
@@ -262,10 +234,6 @@ thead th {
   top: 0;
   left: 0;
 }
-
-
-
-
 
 /*------------------------------------*\
   Navbar
@@ -296,10 +264,6 @@ thead th {
   color: inherit;
   background-color: transparent;
 }
-
-
-
-
 
 /*------------------------------------*\
   Footer
@@ -349,10 +313,6 @@ thead th {
   }
 }
 
-
-
-
-
 /*------------------------------------*\
   Sidebar
 \*------------------------------------*/
@@ -382,14 +342,10 @@ thead th {
 }
 
 @media (max-width: 600px) {
- .sidebar {
+  .sidebar {
     padding: 1em;
   }
 }
- 
-
-
-
 
 /*------------------------------------*\
   Articles
@@ -426,10 +382,6 @@ article .breadcrumbs a {
   font-size: 0.75em;
 }
 
-
-
-
-
 /*------------------------------------*\
   Hero
 \*------------------------------------*/
@@ -438,7 +390,7 @@ article .breadcrumbs a {
   grid-template-columns: auto 740px auto;
   padding: 3em 1em 5em;
   background-color: var(--color-white);
-  background-image: url('/assets/img/dots.svg');
+  background-image: url("/assets/img/dots.svg");
   background-size: 30px;
 }
 #hero > * {
@@ -458,10 +410,6 @@ article .breadcrumbs a {
   }
 }
 
-
-
-
-
 /*------------------------------------*\
   Features
 \*------------------------------------*/
@@ -477,10 +425,6 @@ article .breadcrumbs a {
 #features p {
   margin: 0;
 }
-
-
-
-
 
 /*------------------------------------*\
   Archives
@@ -525,11 +469,6 @@ article .breadcrumbs a {
   text-decoration: none;
 }
 
-
-
-
-
-
 /*------------------------------------*\
   Home
 \*------------------------------------*/
@@ -537,10 +476,6 @@ article .breadcrumbs a {
   border: none;
   text-align: center;
 }
-
-
-
-
 
 /*------------------------------------*\
   Docs
@@ -558,22 +493,20 @@ article .breadcrumbs a {
     padding: 1.5em;
   }
   .docs pre {
-    max-width: 100%;
+    width: 100%;
+    max-width: calc(100vw - 2em);
   }
 }
 
 @media (max-width: 600px) {
- .docs main {
+  .docs main {
     padding: 1em;
   }
   .docs pre {
     width: 100%;
+    max-width: calc(100vw - 2em);
   }
 }
-
-
-
-
 
 /*------------------------------------*\
   Posts
@@ -585,7 +518,3 @@ article .breadcrumbs a {
 .posts img {
   max-width: 100%;
 }
-
-
-
-
