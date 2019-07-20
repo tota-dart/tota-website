@@ -1,8 +1,8 @@
 ---
-title: 'Markdown'
-description: 'Markdown is great'
+title: "Markdown"
+description: "Markdown is great"
 template: "posts.mustache"
-public: true
+public: false
 date: "2019-06-02"
 tags:
   - "fun"
@@ -12,9 +12,9 @@ tags:
 
 Markdown is **great**!
 
-* It has lists.
-* It has [links](http://example.com).
-* And even code blocks:
+- It has lists.
+- It has [links](http://example.com).
+- And even code blocks:
 
 ```dart
 Future<String> greet(String name) => Future.value("Hello, $name!");
@@ -27,3 +27,4 @@ Future<void> main() async {
     print(e.message);
   }
 }
+```

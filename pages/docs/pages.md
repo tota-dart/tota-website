@@ -14,7 +14,7 @@ The most basic type of resource, usually devoid of any dates, and suitable for h
 
 Pages are written in Markdown (`.md`) format and stored in the pages directory. Tota will convert these files to HTML and save them in the `public` directory when your site is built.
 
-The pages directory location can be changed in the [configuration](/docs/configuration#directory) settings:
+The pages directory location can be changed in the directory [configuration](/docs/configuration#directory).
 
 ```bash
 TOTA_PAGES_DIR="pages"
@@ -62,8 +62,8 @@ https://www.example.com/birds/psittaciformes/parrot.html
 
 ## See also
 
-* [Posts](/docs/posts)
-* [Front matter](/docs/front-matter)
-* [Templates](/docs/templates)
+- [Posts](/docs/posts)
+- [Front matter](/docs/front-matter)
+- [Templates](/docs/templates)
 
 <br>

@@ -18,7 +18,7 @@ Posts are written in Markdown (`.md`) format and are stored in a separate top-le
 
 However, unlike pages, posts will be stored in a nested directory inside the public directory. The name of this directory is the same as the posts directory, which can be changed in the [configuration](/docs/configuration#directory) settings.
 
-Since this sub-directory name will be reflected in the final URL, you may wish to change it from the default "`posts`":
+Since this sub-directory will be reflected in the final URL, you may wish to rename your posts directory:
 
 ```bash
 TOTA_POSTS_DIR="blog"
@@ -33,15 +33,15 @@ This will create a URL structure of `https://www.example.com/blog/hello-world`.
 Create a new post by running the [new command](/docs/commands/#new). This will create a new Markdown file in the posts directory.
 
 ```bash
-tota new --type post "Lonely Parrot for Sale"
+tota new --type post "Talkative Parrot for Sale"
 ```
 
-This will create the file `posts/lonely-parrot-for-sale.md`. Alternatively, you can manually create files in the posts directory.
+This will create the file `posts/talkative-parrot-for-sale.md`. Alternatively, you can manually create files in the posts directory.
 
 <br>
 
 ## See also
 
-* [Pages](/docs/pages)
-* [Front matter](/docs/front-matter)
-* [Templates](/docs/templates)
+- [Pages](/docs/pages)
+- [Front matter](/docs/front-matter)
+- [Templates](/docs/templates)
