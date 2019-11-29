@@ -23,5 +23,7 @@ jobs:
           TOTA_DESCRIPTION: "Tota is a simple and elegant static-site generator, written in Dart. Great for personal websites, side-projects, blogs, docs, and more."
           TOTA_AUTHOR: "izolate"
           TOTA_DATE_FORMAT: "yMMMd"
+          TOTA_LANGUAGE: "en"
+          TOTA_POSTS_DIR: "articles"
           TOTA_NETLIFY_SITE: "tota"
           TOTA_NELIFY_TOKEN: ${{ secrets.TOTA_NETLIFY_TOKEN }}
