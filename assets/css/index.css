@@ -136,6 +136,10 @@ h3 {
 a:not(.button) {
   background-color: var(--color-yellow);
   padding: 0 3px;
+  text-decoration-style: normal;
+  text-decoration-skip-ink: auto;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
 }
 
 /*------------------------------------*\
