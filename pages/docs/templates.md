@@ -6,31 +6,47 @@ public: true
 
 # Templates
 
-Templates defines the presentation of your website by setting the HTML structure. Tota uses [Mustache](http://mustache.github.io/) as its templating language.
+Templates define the HTML structure of your website and allow you to change its presentation and style. Tota uses [Mustache](http://mustache.github.io/) templating language, which works by substituting variable placeholders for real data.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <h1>Hello, {{name}}!</h1>
+  </body>
+</html>
+```
 
 <br />
 
 ## Directory
 
-Templates are written in Mustache (`.mustache`) format and stored in the [templates directory](/docs/configuration#directory). Tota will insert the page content into the templates when generating the HTML files.
+Templates are written in Mustache (`.mustache`) format and stored in the [templates directory](/docs/configuration#directory). Tota will insert
+the page content into the templates when generating the HTML files.
 
 <br />
 
 ## Lookup order
 
-Tota follows a simple strategy for resolving which template to use, starting from the most specific and following a series of fallback templates.
+Tota follows a pre-defined strategy to resolve which template to use, starting from the most specific and following a series of fallback
+templates.
 
-An explicit declaration in the [front matter](/docs/front-matter) takes all precedence:
+An explicit template declaration in the [front
+matter](/docs/front-matter) takes the highest order of precedence.
 
 ```yaml
 ---
-title: "Parrots & Cockatoos"
+title: "Parrots and Cockatoos"
 template: "birds.mustache"
 ---
 
 ```
 
-If no template can be found, Tota will fallback to either `pages.mustache` or `posts.mustache`, depending on the type of page being generated. Changing the pages/posts directory configuration will have an effect on this lookup.
+If no template can be found, Tota will fallback to either `pages.mustache` or `posts.mustache`, depending on the type of page being generated. Note that changing the pages/posts directory names in configuration will have an effect on this lookup.
 
 Finally, Tota will try to resolve `base.mustache` before throwing an error.
 
@@ -38,9 +54,9 @@ Finally, Tota will try to resolve `base.mustache` before throwing an error.
 
 ## Partials
 
-Partials are small snippets of reusable code, useful to share components between templates. Common examples include headers, footers, navbars and sidebars.
+Partials are small snippets of reusable code, useful to share components between templates. Common examples include headers, footers, navbars and sidebars. They are stored in a `_partials` directory within the templates directory.
 
-Partials are mustache templates stored in a `_partials` directory within the templates directory. Render partials inside other templates using the following syntax (omitting the file extension).
+You can import partials inside other templates using the following syntax (omitting the `.mustache` file extension).
 
 ```html
 {{> sidebar }}
