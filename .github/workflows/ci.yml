@@ -25,5 +25,5 @@ jobs:
           TOTA_DATE_FORMAT: "yMMMd"
           TOTA_LANGUAGE: "en"
           TOTA_POSTS_DIR: "articles"
-          TOTA_NETLIFY_SITE: "tota"
+          TOTA_NETLIFY_SITE: "tota.netlify.com"
           TOTA_NELIFY_TOKEN: ${{ secrets.TOTA_NETLIFY_TOKEN }}

@@ -6,7 +6,7 @@ public: true
 
 # Templates
 
-Templates define the HTML structure of your website and allow you to change its presentation and style. Tota uses [Mustache](http://mustache.github.io/) templating language, which works by substituting variable placeholders for real data.
+Templates define the HTML structure of your website and allow you to change its presentation and style. Tota uses the [Mustache](http://mustache.github.io/) templating language, which works by substituting variable placeholders for real data.
 
 ```html
 <!DOCTYPE html>
