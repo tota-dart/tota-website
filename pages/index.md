@@ -4,9 +4,9 @@ public: true
 ---
 
 <section id="hero">
-  <h1>Tota is a simple and elegant static-site generator, written in Dart.</h1>
+  <h1>Tota is an elegantly simple static-site generator for all kinds of sites.</h1>
   <div>
-    <a class="button" href="/docs">
+    <a class="unstyled button" href="/docs">
       <img src="/assets/img/book-open.svg" alt="Open book"/>
       <span>Read the docs</span>
     </a>
@@ -16,15 +16,15 @@ public: true
 <section id="features" class="features-layout">
   <div class="feature">
     <h3>Simple, but not stupid.</h3>
-    <p>Tota forgoes some complexity of other static-site generators in order to remain joyous and memorable to use.</p>
+    <p>Ships with sensible defaults to allow zero configuration, but still offers the flexibility of overrides.</p>
   </div>
   <div class="feature">
     <h3>Blog-aware.</h3>
-    <p>Tota treats this common use case with respect with optional permalinks, and archive and tag pages.</p>
+    <p>This common use-case is treated with respect. Tota automatically generates archive and tag pages for blog posts.</p>
   </div>
   <div class="feature">
-    <h3>1-click deployments.</h3>
-    <p>Deploy your site to Netlify, a leading hosting provider, with one command. More hosts coming soon.</p>
+    <h3>Cloud native.</h3>
+    <p>Optimized for automated CI/CD environments. Use Tota's deploy command to upload your site to Netlify in one step.</p>
   </div>
 </section>
 

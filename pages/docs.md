@@ -6,8 +6,8 @@ template: "docs.mustache"
 
 # Overview
 
-Tota is a simple and elegant **static-site generator**, written in Dart.
-Great for personal websites, side-projects, blogs, documentation, and more.
+Tota is an elegantly simple **static-site generator** written in Dart.
+Perfect for personal websites, side-projects, blogs, documentation, and more.
 
 <br>
 
@@ -21,7 +21,7 @@ pub global activate tota
 ```
 
 Of course, if you don't already have Dart installed, you must
-[install it](https://dart.dev/get-dart) first (don't worry, it's simple too).
+[install it](https://dart.dev/get-dart) first (a simple procedure in its own right).
 
 <br>
 
@@ -32,7 +32,6 @@ approximate directory structure.
 
 ```bash
 .
-├── .env
 ├── assets
 │   └── index.css
 ├── pages
@@ -45,10 +44,6 @@ approximate directory structure.
     └── _partials
         └── head.mustache
 ```
-
-### .env
-
-You can configure all [settings](/docs/configuration) in this file.
 
 ### pages
 

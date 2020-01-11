@@ -6,11 +6,7 @@ public: true
 
 # Configuration
 
-Tota uses environment variables prefixed with `TOTA_*` for all settings.
-You can modify these settings with a `.env` (dotenv) file placed in the
-project directory.
-
-⚠️ Don't check-in this configuration file into your git repository.
+While Tota ships with sensible defaults to allow for zero-configuration use, it also allows you to override settings by using environment variables prefixed with `TOTA_*`.
 
 <br>
 

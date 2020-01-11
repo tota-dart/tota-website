@@ -1,10 +1,6 @@
-<svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M767.235 379.474L767.197 377.175L752.338 342.731L649.066 376.218L665.533 458.287C710.446 458.287 767.235 427.272 767.235 379.474Z" fill="#E7A526"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M730.927 206.751C812.158 217.036 875 287.028 875 371.845L874.932 376.634L628.977 378.633L707.077 207.779H730.927V206.751Z" fill="#FFCC69"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M402.661 314.876L453.072 206.935L731.114 206.873L656.959 563.5L582.19 613.532L402.661 314.876Z" fill="#D6292C"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M402.661 314.876L125 919.48L656.959 563.5L402.661 314.876Z" fill="#6B6BFF"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M574.893 253.367C601.567 253.367 623.192 274.117 623.192 299.697C623.192 325.29 601.567 346.031 574.893 346.031C548.219 346.031 526.594 325.29 526.594 299.697C526.594 274.117 548.219 253.367 574.893 253.367Z" fill="white"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M282.093 577.409L544.945 638.462L303.865 529.992L282.093 577.409Z" fill="#4646FF"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M179.598 80L209.76 488.021L544.945 638.462L656.959 563.5L179.598 80Z" fill="#84DC60"/>
+<svg width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M435.82 294.177L435.78 291.712L419.849 254.784L309.131 290.686L326.786 378.673C374.937 378.673 435.82 345.421 435.82 294.177Z" fill="#F39A00"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M396.895 109C483.983 120.027 551.356 195.066 551.356 285.998L551.283 291.132L287.594 293.275L371.325 110.103H396.895V109Z" fill="#F8BE2A"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M317.593 491.472L48 218.411L99.0058 109.197L397.096 109.131L317.593 491.472Z" fill="#504BE5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M229.61 158.977C258.208 158.977 281.392 181.224 281.392 208.648C281.392 236.087 258.208 258.322 229.61 258.322C201.013 258.322 177.829 236.087 177.829 208.648C177.829 181.224 201.013 158.977 229.61 158.977Z" fill="white"/>
 </svg>
-
