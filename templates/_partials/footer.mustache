@@ -3,7 +3,9 @@
     <img src="/assets/img/tota-logo.svg" class="logo" alt="Tota logo"/>
     <p>Tota is a static-site generator made by <a href="https://izolate.net/">@izolate</a>.</p>
     <br>
-    <p>The contents of this website (sans logo) are &copy; 2019 under the MIT license.</p>
+    <p>
+      The contents of this website (sans logo) are &copy; <span data-insert="year"></span> under the MIT license.
+    </p>
   </div>
   <div>
     <nav>
@@ -36,3 +38,10 @@
     </nav>
   </div>
 </footer>
+
+<script>
+  // Add current year to date span
+  for (const el of document.querySelectorAll('span[data-insert="year"]')) {
+    el.textContent = new Date().getFullYear();
+  }
+</script>
