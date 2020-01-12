@@ -25,3 +25,11 @@ The assets directory location can be changed in the directory [configuration](/d
 ```bash
 TOTA_ASSETS_DIRECTORY="static"
 ```
+
+<hr />
+
+## Related
+
+- [Pages](/docs/pages)
+- [Templates](/docs/templates)
+- [Deployment](/docs/deployment)

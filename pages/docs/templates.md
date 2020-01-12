@@ -61,3 +61,11 @@ You can import partials inside other templates using the following syntax (omitt
 ```html
 {{> sidebar }}
 ```
+
+<hr />
+
+## Related
+
+- [Pages](/docs/pages)
+- [Front matter](/docs/front-matter)
+- [Assets](/docs/assets)

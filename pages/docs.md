@@ -33,12 +33,11 @@ approximate directory structure.
 ```bash
 .
 ├── assets
-│   └── index.css
+│   └── styles.css
 ├── pages
 │   └── index.md
 ├── posts
 │   └── hello-world.md
-├── README.md
 └── templates
     ├── base.mustache
     └── _partials
@@ -67,3 +66,9 @@ to avoid repeating them in every page.
 
 Stores all static content (JavaScript, CSS, images). This directory is
 copied over as-is to the public directory when Tota builds your site.
+
+<hr />
+
+## Next steps
+
+* [Commands](/docs/commands)

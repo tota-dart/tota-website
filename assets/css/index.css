@@ -12,6 +12,7 @@
  * Links................Anchor styles.
  * Code.................Code block styles.
  * Tables...............Table styles.
+ * Breaks...............Horizontal rules.
  *
  * OBJECTS
  * Grid Layouts.........Types of layouts.
@@ -179,6 +180,16 @@ thead td,
 thead th {
   border-width: 0 0 2px;
   text-align: left;
+}
+
+/*------------------------------------*\
+  Breaks
+\*------------------------------------*/
+hr {
+  border-width: 2px;
+  border-color: var(--color-secondary);
+  border-style: solid;
+  margin: 4em 0;
 }
 
 /*------------------------------------*\

@@ -73,3 +73,9 @@ Option | Description
 --- | ---
 `--host` | Hosting provider (defaults to "netlify")
 `-v`, `--verbose` | Enable verbose logging
+
+<hr>
+
+## Next steps
+
+* [Configuration](/docs/configuration)

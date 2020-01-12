@@ -33,3 +33,10 @@ The following table lists the pre-defined metadata that you can set in the front
 | `template`    | `"base.mustache"`                                                   | The mustache HTML template to use, relative to the templates directory.               |
 | `date`        | Current date                                                        | A date in `YYYY-MM-DD HH:MM:SS` format. The hours, minutes, and seconds are optional. |
 | `tags`        | -                                                                   | A [YAML list](https://en.wikipedia.org/wiki/YAML#Basic_components) of tags.           |
+
+<hr />
+
+## Related
+
+- [Pages](/docs/pages)
+- [Templates](/docs/templates)

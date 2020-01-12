@@ -38,9 +38,9 @@ tota new --type post "Talkative Parrot for Sale"
 
 This will create the file `posts/talkative-parrot-for-sale.md`. Alternatively, you can manually create files in the posts directory.
 
-<br>
+<hr>
 
-## See also
+## Related
 
 - [Pages](/docs/pages)
 - [Front matter](/docs/front-matter)

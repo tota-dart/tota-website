@@ -58,12 +58,10 @@ This allows you to create a nested URL structure:
 https://www.example.com/birds/psittaciformes/parrot.html
 ```
 
-<br>
+<hr>
 
-## See also
+## Related
 
 - [Posts](/docs/posts)
 - [Front matter](/docs/front-matter)
 - [Templates](/docs/templates)
-
-<br>
